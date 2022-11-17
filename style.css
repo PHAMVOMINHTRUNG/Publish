@@ -276,6 +276,17 @@ main section.releted-content .product-list {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
+main section.releted-content .product-list .product-list__item .product-list__item__success {
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  color: #093389;
+  margin-bottom: 28px;
+}
+main section.releted-content .product-list .product-list__item .product-list__item__success i {
+  margin-left: 10px;
+}
 main section.releted-content .product-list .product-list__item img {
   height: auto;
   width: 100%;
