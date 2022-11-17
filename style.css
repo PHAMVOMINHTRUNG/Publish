@@ -26,15 +26,52 @@
   color: #093389 !important;
 }
 
+.fs--46 {
+  font-size: 46px !important;
+}
+
+.fs--32 {
+  font-size: 32px !important;
+}
+
+.fs--20 {
+  font-size: 20px !important;
+}
+
+.fw--700 {
+  font-weight: 700;
+}
+
+select.select-custom {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("./assets/arrow-down-black.svg");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  cursor: pointer;
+  padding-right: 2rem;
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
+  color: #000;
+}
+select.select-custom:focus {
+  outline: 0;
+}
+
 header {
   background-image: url("./assets/banner.png");
   background-size: cover;
   height: 430px;
   width: 100%;
-  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: relative;
 }
 header nav.navbar {
   padding: 37px 80px;
@@ -113,25 +150,45 @@ main section.header-content {
   width: 100%;
   display: flex;
   padding-left: 240px;
+  padding-right: 240px;
   border-bottom: 1px solid #d7d7d7;
   margin-bottom: 100px;
 }
-main section.header-content .menu__item {
+main section.header-content .header-content__icon {
+  height: 69px;
+  width: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #d7d7d7;
+  border-left: 1px solid #d7d7d7;
+}
+main section.header-content .header-content__icon_share {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+main section.header-content .header-content__icon_share img {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+main section.header-content .header-content__item {
   padding: 24px 30px;
   border-right: 1px solid #d7d7d7;
 }
-main section.header-content .menu__item:first-of-type {
+main section.header-content .header-content__item:first-of-type {
   border-left: 1px solid #d7d7d7;
 }
-main section.header-content .menu__item select.select-custom {
+main section.header-content .header-content__item select.select-custom {
   height: 100%;
   width: 180px;
 }
-main section.header-content .menu__item select.select-custom.active {
+main section.header-content .header-content__item select.select-custom.active {
   color: #093389;
   background-image: url("./assets/arrow-down-blue.svg");
 }
-main section.header-content .menu__item:hover select.select-custom {
+main section.header-content .header-content__item:hover select.select-custom {
   color: #093389;
   background-image: url("./assets/arrow-down-blue.svg");
 }
@@ -159,4 +216,71 @@ main section.fixed-menu .fixed-menu__item.active {
 main section.fixed-menu .fixed-menu__item img {
   height: 30px;
   width: 30px;
+}
+main section.extra-hight {
+  padding: 0 240px;
+  display: flex;
+  justify-content: end;
+}
+main section.extra-hight .extra-hight__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+main section.extra-hight .extra-hight__select {
+  display: flex;
+  justify-content: flex-end;
+}
+main section.extra-hight .extra-hight__select .extra-hight-warper {
+  display: flex;
+  gap: 10px;
+}
+main section.extra-hight .extra-hight__select .extra-hight-warper .extra-hight-warper__item {
+  border: 1px solid #d7d7d7;
+  padding: 15px 30px;
+}
+main section.extra-hight .extra-hight__select .extra-hight-warper .extra-hight-warper__item i {
+  cursor: pointer;
+  margin-left: 16px;
+}
+main section.product {
+  padding: 0 240px;
+  margin-bottom: 120px;
+}
+main section.product h1 {
+  font-size: 38px;
+}
+main section.product .product-list {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+main section.product .product-list .product-list__item img {
+  height: auto;
+  width: 100%;
+  max-height: 454px;
+  margin-bottom: 32px;
+  font-size: 26px;
+  font-weight: 500;
+}
+main section.releted-content {
+  padding: 120px 240px 160px;
+  background-color: #f4f5f7;
+  margin-top: 60px;
+}
+main section.releted-content .product-list {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+main section.releted-content .product-list .product-list__item img {
+  height: auto;
+  width: 100%;
+  max-height: 454px;
+  margin-bottom: 32px;
+  font-size: 26px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

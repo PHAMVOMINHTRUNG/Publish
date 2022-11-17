@@ -17,8 +17,14 @@ $MontserratFont: "Montserrat", sans-serif;
 $default-size: 160px;
 
 @mixin size($width, $height) {
-    height: $height;
-    width: $width;
+  height: $height;
+  width: $width;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .color--white {
@@ -41,15 +47,48 @@ $default-size: 160px;
   color: $blue !important;
 }
 
+.fs--46 {
+  font-size: 46px !important;
+}
+
+.fs--32 {
+  font-size: 32px !important;
+}
+
+.fs--20 {
+  font-size: 20px !important;
+}
+
+.fw--700 {
+  font-weight: 700;
+}
+
+select.select-custom {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("./assets/arrow-down-black.svg");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  cursor: pointer;
+  padding-right: 2rem;
+  @include size(100%, 100%);
+  border: none;
+  font-size: 17px;
+  font-family: $SpoqaHanSansNeoFont;
+  color: $black;
+  &:focus {
+    outline: 0;
+  }
+}
 
 header {
   background-image: url("./assets/banner.png");
   background-size: cover;
   @include size(100%, 430px);
+  @include flexCenter();
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   nav.navbar {
     padding: 37px 80px;
@@ -129,9 +168,27 @@ main {
       @include size(100%, 70px);
       display: flex;
       padding-left: 240px;
+      padding-right: 240px;
       border-bottom: 1px solid $gray;
       margin-bottom: 100px;
-      .menu__item {
+      .header-content__icon {
+        @include size(76px, 69px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid $gray;
+        border-left: 1px solid $gray;
+      }
+      .header-content__icon_share {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        img {
+          cursor: pointer;
+          @include size(20px, 20px);
+        }
+      }
+      .header-content__item {
         padding: 24px 30px;
         border-right: 1px solid $gray;
         &:first-of-type {
@@ -177,9 +234,74 @@ main {
         }
       }
     }
+    &.extra-hight {
+      padding: 0 240px;
+      display: flex;
+      justify-content: end;
+      .extra-hight__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 55%;
+      }
+      .extra-hight__select {
+        display: flex;
+        justify-content: flex-end;
+        .extra-hight-warper {
+          display: flex;
+          gap: 10px;
+          .extra-hight-warper__item{
+            border:1px solid $gray;
+            padding: 15px 30px;
+            i{
+              cursor: pointer;
+              margin-left: 16px;
+            }
+          }
+        }
+      }
+    }
+    &.product{
+      padding: 0 240px;
+      margin-bottom: 120px;
+      h1{
+        font-size: 38px;
+      }
+      .product-list{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        .product-list__item{
+          img{
+            @include size(100%,auto);
+            max-height: 454px;
+            margin-bottom: 32px;
+            font-size: 26px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    &.releted-content{
+      padding: 120px 240px 160px;
+      background-color: #f4f5f7;
+      .product-list{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        .product-list__item{
+          img{
+            @include size(100%,auto);
+            max-height: 454px;
+            margin-bottom: 32px;
+            font-size: 26px;
+            font-weight: 500;
+          }
+        }
+      }
+      margin-top: 60px;
+    }
   }
-  
-
 }
-
-
