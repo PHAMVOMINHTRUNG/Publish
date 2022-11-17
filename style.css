@@ -217,6 +217,11 @@ main section.fixed-menu .fixed-menu__item img {
   height: 30px;
   width: 30px;
 }
+main section.fixed-menu .fixed-menu__item.scroll-top {
+  background-color: transparent;
+  color: #000;
+  flex-direction: column;
+}
 main section.extra-hight {
   padding: 0 240px;
   display: flex;
@@ -283,4 +288,81 @@ main section.releted-content .product-list .product-list__item img {
   margin-bottom: 32px;
   font-size: 26px;
   font-weight: 500;
+}
+
+footer {
+  background-color: #000;
+}
+footer .footer-widgets {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 60px 240px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+footer .footer-widgets .widget-item {
+  width: 20%;
+}
+footer .footer-widgets .widget-item h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+footer .footer-widgets .widget-item__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+footer .footer-widgets .widget-item__content a {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+footer .footer-container {
+  display: grid;
+  grid-template-columns: 10% 60% 20%;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding: 50px 240px;
+}
+footer .footer-container__image {
+  height: 27px;
+  width: 105px;
+}
+footer .footer-container__title {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+footer .footer-container__title h1 {
+  font-size: 16px;
+  color: #ffffff;
+}
+footer .footer-container__description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+}
+footer .footer-container__description p:not(:last-of-type) {
+  margin-bottom: 13px;
+}
+footer .footer-container__form .select-wrapper {
+  border: solid 1px rgba(255, 255, 255, 0.4);
+  padding: 0 18px;
+  height: 48px;
+  width: 180px;
+}
+footer .footer-container__form .select-wrapper select {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.4);
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+footer .footer-container__form .select-wrapper select:focus {
+  outline: 0;
 }/*# sourceMappingURL=style.css.map */
