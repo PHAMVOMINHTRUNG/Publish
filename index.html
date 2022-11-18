@@ -12,6 +12,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/spoqa-han-sans/3.2.1/css/SpoqaHanSans-kr.min.css"
+      integrity="sha512-31VqGq+2pNMQtVc5CA+vSSanqKO4jMcMlFBfFHfDmvkS7DFOJltwRBlQIdQO2aZ41uI9ywJCXsrCyVgx0iiznQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
@@ -58,8 +65,8 @@
       </nav>
 
       <div class="banner__title">
-        <h1 class="fs-60 fw-700 color-white">제품</h1>
-        <span class="circle circle--red"></span>
+        <h1 class="fs--60 fw--700 color--white">제품</h1>
+        <span class="circle--red"></span>
       </div>
     </header>
 
@@ -111,21 +118,34 @@
         </div>
       </section>
 
-      <section class="extra-hight">
-        <div class="extra-hight__title">
-          <h1 class="fs--46 fw--700">초고압 케이블</h1>
-          <div class="extra-hight__select">
-            <div class="extra-hight-warper">
-              <div class="extra-hight-warper__item">
-                전력
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-              <div class="extra-hight-warper__item">
-                카탈로그·지명원
-                <i class="fa-solid fa-download"></i>
+      <section class="extra">
+        <div class="extra-hight">
+          <div class="extra-hight__title">
+            <h1 class="fs--46 fw--700">초고압 케이블</h1>
+            <div class="extra-hight__select">
+              <div class="extra-hight-warper">
+                <div class="extra-hight-warper__item">
+                  전력
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="extra-hight-warper__item">
+                  카탈로그·지명원
+                  <img src="./assets/download.svg" />
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="extra-banner">
+          <p>
+            국내 최초, 세계 9번째로 154kV OF 케이블 개발에 성공하며 초고압
+            시대를 연 대한전선은, 세계 주요 시장에 고품질의 초고압 케이블을
+            공급하는 선두 업체로 자리매김했습니다. 기술 개발과 품질 향상을 위한
+            끊임없는 노력으로 154kV XLPE 케이블, 345kV OF 케이블 등을 국내
+            처음으로 개발하였으며, 고도의 기술력을 바탕으로 아시아, 중동, 유럽,
+            미주 등 글로벌 프로젝트를 성공적으로 수행하고 차별화된 가치를
+            제공하고 있습니다.
+          </p>
         </div>
       </section>
 
@@ -217,7 +237,29 @@
             <i class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
-        
+
+        <div class="product-form">
+          <div class="views-product">
+            <button class="views-product__btn">전체 제품 보러가기</button>
+          </div>
+          <h1>Product Quick Search</h1>
+          <p>필요한 제품을 바로 검색해보세요.</p>
+          <form>
+            <div class="form-item">
+              <input
+                placeholder="검색어를 입력하세요."
+                class="form-item-control"
+              />
+              <button><i class="fa fa-search fa-xl"></i></button>
+            </div>
+          </form>
+          <div class="suggest-keywords">
+            <div class="suggest-keyword">초고압케이블</div>
+            <div class="suggest-keyword">해저케이블</div>
+            <div class="suggest-keyword">OF 케이블</div>
+            <div class="suggest-keyword">증용량가공선</div>
+          </div>
+        </div>
       </section>
     </main>
 

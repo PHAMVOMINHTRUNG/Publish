@@ -38,13 +38,15 @@
   font-size: 20px !important;
 }
 
+.fs--60 {
+  font-size: 60px !important;
+}
+
 .fw--700 {
   font-weight: 700;
 }
 
 select.select-custom {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   background: transparent;
   background-image: url("./assets/arrow-down-black.svg");
   background-repeat: no-repeat;
@@ -141,8 +143,12 @@ header .banner__title {
 header .banner__title h1 {
   font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
 }
-header .banner__title .circle {
+header .banner__title .circle--red {
   margin-bottom: 12px;
+  height: 12px;
+  width: 12px;
+  background: #fa0000;
+  border-radius: 50%;
 }
 
 main section.header-content {
@@ -222,32 +228,54 @@ main section.fixed-menu .fixed-menu__item.scroll-top {
   color: #000;
   flex-direction: column;
 }
-main section.extra-hight {
+main section.extra .extra-hight {
+  margin-bottom: 80px;
   padding: 0 240px;
   display: flex;
   justify-content: end;
 }
-main section.extra-hight .extra-hight__title {
+main section.extra .extra-hight .extra-hight__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 55%;
 }
-main section.extra-hight .extra-hight__select {
+main section.extra .extra-hight .extra-hight__select {
   display: flex;
   justify-content: flex-end;
 }
-main section.extra-hight .extra-hight__select .extra-hight-warper {
+main section.extra .extra-hight .extra-hight__select .extra-hight-warper {
   display: flex;
   gap: 10px;
 }
-main section.extra-hight .extra-hight__select .extra-hight-warper .extra-hight-warper__item {
+main section.extra .extra-hight .extra-hight__select .extra-hight-warper .extra-hight-warper__item {
+  display: flex;
   border: 1px solid #d7d7d7;
   padding: 15px 30px;
 }
-main section.extra-hight .extra-hight__select .extra-hight-warper .extra-hight-warper__item i {
+main section.extra .extra-hight .extra-hight__select .extra-hight-warper .extra-hight-warper__item img {
+  margin-left: 10px;
+  cursor: pointer;
+}
+main section.extra .extra-hight .extra-hight__select .extra-hight-warper .extra-hight-warper__item i {
   cursor: pointer;
   margin-left: 16px;
+}
+main section.extra .extra-banner {
+  margin-bottom: 120px;
+  background-image: url("./assets/bannerExtraHight.png");
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 240px;
+  font-size: 20px;
+  font-family: SpoqaHanSansNeo;
+}
+main section.extra .extra-banner p {
+  color: #ffffff;
+  width: 700px;
 }
 main section.product {
   padding: 0 240px;
@@ -299,6 +327,72 @@ main section.releted-content .product-list .product-list__item img {
   margin-bottom: 32px;
   font-size: 26px;
   font-weight: 500;
+}
+main section.related-solution .product-form {
+  padding: 0 240px;
+}
+main section.related-solution .product-form .views-product {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+main section.related-solution .product-form .views-product .views-product__btn {
+  height: 80px;
+  width: 248px;
+  background-color: #303030;
+  font-size: 20px;
+  font-weight: 500;
+  color: #d7d7d7;
+}
+main section.related-solution .product-form h1 {
+  font-family: Montserrat;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000;
+}
+main section.related-solution .product-form p {
+  text-align: center;
+  font-family: SpoqaHanSansNeo;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 70px;
+}
+main section.related-solution .product-form .form-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+main section.related-solution .product-form .form-item input {
+  height: 50px;
+  width: 750px;
+  font-size: 24px;
+  color: #aaa;
+  border-bottom: 2px solid #000;
+  border-top: unset;
+  border-left: unset;
+  border-right: unset;
+}
+main section.related-solution .product-form .form-item input:focus {
+  outline: none;
+}
+main section.related-solution .product-form .form-item button {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid;
+}
+main section.related-solution .product-form .suggest-keywords {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 192px;
+}
+main section.related-solution .product-form .suggest-keywords .suggest-keyword {
+  border-radius: 20px;
+  border: solid 1px #d7d7d7;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 footer {

@@ -59,13 +59,15 @@ $default-size: 160px;
   font-size: 20px !important;
 }
 
+.fs--60 {
+  font-size: 60px !important;
+}
+
 .fw--700 {
   font-weight: 700;
 }
 
 select.select-custom {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   background: transparent;
   background-image: url("./assets/arrow-down-black.svg");
   background-repeat: no-repeat;
@@ -156,8 +158,11 @@ header {
     h1 {
       font-family: $SpoqaHanSansNeoFont;
     }
-    .circle {
+    .circle--red {
       margin-bottom: 12px;
+      @include size(12px,12px);
+      background:$red;
+      border-radius: 50%;
     }
   }
 }
@@ -240,30 +245,53 @@ main {
         }
       }
     }
-    &.extra-hight {
-      padding: 0 240px;
-      display: flex;
-      justify-content: end;
-      .extra-hight__title {
+    &.extra {
+      .extra-hight {
+        margin-bottom: 80px;
+        padding: 0 240px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 55%;
-      }
-      .extra-hight__select {
-        display: flex;
-        justify-content: flex-end;
-        .extra-hight-warper {
+        justify-content: end;
+        .extra-hight__title {
           display: flex;
-          gap: 10px;
-          .extra-hight-warper__item {
-            border: 1px solid $gray;
-            padding: 15px 30px;
-            i {
-              cursor: pointer;
-              margin-left: 16px;
+          justify-content: space-between;
+          align-items: center;
+          width: 55%;
+        }
+        .extra-hight__select {
+          display: flex;
+          justify-content: flex-end;
+          .extra-hight-warper {
+            display: flex;
+            gap: 10px;
+            .extra-hight-warper__item {
+              display: flex;
+              border: 1px solid $gray;
+              padding: 15px 30px;
+              img{
+                margin-left: 10px;
+                cursor: pointer;
+              }
+              i {
+                cursor: pointer;
+                margin-left: 16px;
+              }
             }
           }
+        }
+      }
+      .extra-banner {
+        margin-bottom: 120px;
+        background-image: url("./assets/bannerExtraHight.png");
+        background-size: cover;
+        @include size(100%, 600px);
+        display: flex;
+        align-items: center;
+        padding-left: 240px;
+        font-size: 20px;
+        font-family: SpoqaHanSansNeo;
+        p {
+          color: $white;
+          width: 700px;
         }
       }
     }
@@ -308,7 +336,6 @@ main {
             i {
               margin-left: 10px;
             }
-          
           }
           img {
             @include size(100%, auto);
@@ -320,6 +347,72 @@ main {
         }
       }
       margin-top: 60px;
+    }
+    &.related-solution {
+      .product-form {
+        padding: 0 240px;
+        .views-product {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 150px;
+          .views-product__btn {
+            @include size(248px, 80px);
+            background-color: #303030;
+            font-size: 20px;
+            font-weight: 500;
+            color: $gray;
+          }
+        }
+        h1 {
+          font-family: Montserrat;
+          font-size: 32px;
+          text-align: center;
+          margin-bottom: 30px;
+          color: $black;
+        }
+        p {
+          text-align: center;
+          font-family: SpoqaHanSansNeo;
+          font-size: 20px;
+          color: $black;
+          margin-bottom: 70px;
+        }
+        .form-item {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 50px;
+          input {
+            @include size(750px, 50px);
+            font-size: 24px;
+            color: #aaa;
+            border-bottom: 2px solid $black;
+            border-top: unset;
+            border-left: unset;
+            border-right: unset;
+          }
+          input:focus{
+            outline: none;
+          }
+          button {
+            border: none;
+            background: transparent;
+            border-bottom: 2px solid;
+          }
+        }
+        .suggest-keywords {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          margin-bottom: 192px;
+          .suggest-keyword {
+            border-radius: 20px;
+            border: solid 1px #d7d7d7;
+            padding: 8px 15px;
+            font-size: 16px;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }
