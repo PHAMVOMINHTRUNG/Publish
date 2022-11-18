@@ -265,7 +265,6 @@ main {
             display: flex;
             gap: 10px;
             .extra-hight-warper__item {
-              display: flex;
               border: 1px solid $gray;
               padding: 15px 30px;
               img{
@@ -362,12 +361,17 @@ main {
           .product-list__item__success {
             display: flex;
             align-items: center;
-            font-family: Montserrat;
-            font-size: 20px;
-            color: #093389;
             margin-bottom: 28px;
+            p{
+              font-family: $MontserratFont;
+              font-size: 20px;
+              color: #093389;
+              font-weight: bold;
+            }
             i {
               margin-left: 10px;
+              color: #093389;
+              @include size(7px,14px )
             }
           }
           img {
@@ -382,6 +386,48 @@ main {
       margin-top: 60px;
     }
     &.related-solution {
+      .related-solution__content{
+        margin-top: 120px;
+        padding: 0 240px;
+        .related-solution__head{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 50px;
+          .related-solution__head__extra {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .btn-paging {
+              @include size(46px,46px );
+              border: 1px solid #d7d7d7;
+              border-radius: 23px;
+              background-color: #fff;
+            }
+          }
+          h1{
+            font-size: 38px;
+          }
+        }
+        .related-solution__list{
+          margin-bottom: 120px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          .related-solution__list__item{
+            display: flex;
+            align-items: center;
+            border: solid 1px #d7d7d7;
+            padding: 25px 50px;
+            &:not(:last-of-type){
+              border-right: 0;
+            }
+            p{
+              margin: 0 10px 0 30px;
+              font-size: 24px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
       .product-form {
         padding: 0 240px;
         .views-product {
@@ -397,7 +443,7 @@ main {
           }
         }
         h1 {
-          font-family: Montserrat;
+          font-family: $MontserratFont;
           font-size: 32px;
           text-align: center;
           margin-bottom: 30px;

@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 26" width="9" height="8">
+	<title>Screenshot 2022-11-18 092629</title>
+	<defs>
+		<image  width="13" height="21" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAVCAMAAACqsJS4AAAAAXNSR0IB2cksfwAAAURQTFRF/Pz87u7u5eXl4eHh5+fn9/f3////8/PzxMTEoaGhlZWVqamp4+Pj/v7+7+/vrq6ueXl5W1tbbGxstbW14uLiq6ura2trNDQ0MDAw6Ojojo6OTExMLi4uPj4+bW1t39/f+Pj48fHx0tLSVFRUJiYm7e3t8PDwMzMzPT09b29v3d3d+vr69fX1UlJSHh4eaGhorKys9PT0xcXFj4+PNzc3Ojo6tLS029vb/f39+fn5jY2NT09PFRUVLy8vZ2dnr6+v2tralpaWU1NTERERKCgoXFxcqKiomJiYVVVVJycnWlpap6enzMzMNTU1ZmZmqqqq1dXV+/v7WFhYGhoapKSk8vLyy8vLODg4ZWVl1tbWIyMjX19foqKi6+vrZGRk2NjYYGBgoKCg5ubmra2tdnZ2Y2Njvr6+l5eXioqK6enp3Nzc19fX+XBU6wAAAGx0Uk5TABCg4IAAAAD/////wAAA///////Q/////3D///////8AAP///yAA/////wAA/////wD///////8AAP//////////////////////////////AP///wD/////////QP////+Q////////YP//9cxV7AAAAOhJREFUeJxjYGBkYmZhZYMABnYOTi5uHl4oj49fQFBIWAQiy8AoKiYuIcYtyQtVKSUtIysnLK8A4jEoKkkpq0iIiaoCZRnY2NSAsuoamsJa2iAeg46SlK6ehL6BIYjHxqZqZCxtYqppZg7mWVgqWVnb2NrZM0CsdXB0cnZxdYPyzN09nD29vME8Ph93D1NfP/8AII830Nw9KNjTNSSUF8gLDXP3MAmP8I+0ZGOwYDV394pyiY6JBbnFECijbhonGs8K9oOBmIRLQmISxA+MySkeqaLmOhD/haalZyQyw/wemJmVLa8DDRcAY6okWcyhLB8AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="9" y="2"/>
+</svg>

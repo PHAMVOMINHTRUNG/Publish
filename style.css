@@ -249,7 +249,6 @@ main section.extra .extra-hight .extra-hight__select .extra-hight-warper {
   gap: 10px;
 }
 main section.extra .extra-hight .extra-hight__select .extra-hight-warper .extra-hight-warper__item {
-  display: flex;
   border: 1px solid #d7d7d7;
   padding: 15px 30px;
 }
@@ -334,13 +333,19 @@ main section.releted-content .product-list {
 main section.releted-content .product-list .product-list__item .product-list__item__success {
   display: flex;
   align-items: center;
-  font-family: Montserrat;
+  margin-bottom: 28px;
+}
+main section.releted-content .product-list .product-list__item .product-list__item__success p {
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   color: #093389;
-  margin-bottom: 28px;
+  font-weight: bold;
 }
 main section.releted-content .product-list .product-list__item .product-list__item__success i {
   margin-left: 10px;
+  color: #093389;
+  height: 14px;
+  width: 7px;
 }
 main section.releted-content .product-list .product-list__item img {
   height: auto;
@@ -348,6 +353,49 @@ main section.releted-content .product-list .product-list__item img {
   max-height: 454px;
   margin-bottom: 32px;
   font-size: 26px;
+  font-weight: 500;
+}
+main section.related-solution .related-solution__content {
+  margin-top: 120px;
+  padding: 0 240px;
+}
+main section.related-solution .related-solution__content .related-solution__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+main section.related-solution .related-solution__content .related-solution__head .related-solution__head__extra {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main section.related-solution .related-solution__content .related-solution__head .related-solution__head__extra .btn-paging {
+  height: 46px;
+  width: 46px;
+  border: 1px solid #d7d7d7;
+  border-radius: 23px;
+  background-color: #fff;
+}
+main section.related-solution .related-solution__content .related-solution__head h1 {
+  font-size: 38px;
+}
+main section.related-solution .related-solution__content .related-solution__list {
+  margin-bottom: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main section.related-solution .related-solution__content .related-solution__list .related-solution__list__item {
+  display: flex;
+  align-items: center;
+  border: solid 1px #d7d7d7;
+  padding: 25px 50px;
+}
+main section.related-solution .related-solution__content .related-solution__list .related-solution__list__item:not(:last-of-type) {
+  border-right: 0;
+}
+main section.related-solution .related-solution__content .related-solution__list .related-solution__list__item p {
+  margin: 0 10px 0 30px;
+  font-size: 24px;
   font-weight: 500;
 }
 main section.related-solution .product-form {
@@ -367,7 +415,7 @@ main section.related-solution .product-form .views-product .views-product__btn {
   color: #d7d7d7;
 }
 main section.related-solution .product-form h1 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 32px;
   text-align: center;
   margin-bottom: 30px;
