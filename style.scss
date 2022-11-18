@@ -12,6 +12,7 @@ $black: #000;
 $red: #fa0000;
 $gray: #d7d7d7;
 $blue: #093389;
+$blue-1: #f4f5f7;
 $SpoqaHanSansNeoFont: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
 $MontserratFont: "Montserrat", sans-serif;
 $default-size: 160px;
@@ -292,6 +293,38 @@ main {
     &.releted-content {
       padding: 120px 240px 160px;
       background-color: #f4f5f7;
+      .releted-content__title {
+        display: flex;
+        justify-content: space-between;
+        &__extra {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .btn-paging {
+            width: 46px;
+            height: 46px;
+            border: 1px solid #d7d7d7;
+            border-radius: 23px;
+            background-color: #fff;
+          }
+        }
+      }
+      .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
       .product-list {
         margin-top: 60px;
         display: grid;
@@ -308,7 +341,6 @@ main {
             i {
               margin-left: 10px;
             }
-          
           }
           img {
             @include size(100%, auto);

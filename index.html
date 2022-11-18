@@ -13,6 +13,11 @@
       referrerpolicy="no-referrer"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
       integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
@@ -166,31 +171,77 @@
       </section>
 
       <section class="releted-content">
-        <h1 class="fw--700">연관 콘텐츠</h1>
-        <div class="product-list">
-          <div class="product-list__item">
-            <img src="./assets/chinoHill.png" alt="" />
-            <div class="product-list__item__success">
-              <p>Success Story</p>
-              <i class="fa-solid fa-chevron-right"></i>
-            </div>
-            <p>초고압 XLPE 케이블 접속재</p>
+        <div class="releted-content__title">
+          <h1 class="fw--700">연관 콘텐츠</h1>
+          <div class="releted-content__title__extra">
+            <button class="btn-paging">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <span class="page-text">1/5</span>
+            <button class="btn-paging">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
           </div>
-          <div class="product-list__item">
-            <img src="./assets/ndc199.png" alt="" />
-            <div class="product-list__item__success">
-              <p>Success Story</p>
-              <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-list">
+                <div class="product-list__item">
+                  <img src="./assets/chinoHill.png" alt="" />
+                  <div class="product-list__item__success">
+                    <p>Success Story</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <p>초고압 XLPE 케이블 접속재</p>
+                </div>
+                <div class="product-list__item">
+                  <img src="./assets/ndc199.png" alt="" />
+                  <div class="product-list__item__success">
+                    <p>Success Story</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <p>초고압 OF 케이블 접속재</p>
+                </div>
+                <div class="product-list__item">
+                  <img src="./assets/powering.png" alt="" />
+                  <div class="product-list__item__success">
+                    <p>Success Story</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <p>기타 초고압 케이블 접속재</p>
+                </div>
+              </div>
             </div>
-            <p>초고압 OF 케이블 접속재</p>
-          </div>
-          <div class="product-list__item">
-            <img src="./assets/powering.png" alt="" />
-            <div class="product-list__item__success">
-              <p>Success Story</p>
-              <i class="fa-solid fa-chevron-right"></i>
+            <div class="swiper-slide">
+              <div class="product-list">
+                <div class="product-list__item">
+                  <img src="./assets/chinoHill.png" alt="" />
+                  <div class="product-list__item__success">
+                    <p>Success Story</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <p>초고압 XLPE 케이블 접속재</p>
+                </div>
+                <div class="product-list__item">
+                  <img src="./assets/ndc199.png" alt="" />
+                  <div class="product-list__item__success">
+                    <p>Success Story</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <p>초고압 OF 케이블 접속재</p>
+                </div>
+                <div class="product-list__item">
+                  <img src="./assets/powering.png" alt="" />
+                  <div class="product-list__item__success">
+                    <p>Success Story</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <p>기타 초고압 케이블 접속재</p>
+                </div>
+              </div>
             </div>
-            <p>기타 초고압 케이블 접속재</p>
           </div>
         </div>
       </section>
@@ -217,7 +268,6 @@
             <i class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
-        
       </section>
     </main>
 
@@ -307,6 +357,8 @@
         </form>
       </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
