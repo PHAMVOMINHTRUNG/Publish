@@ -1,8 +1,19 @@
 var $divScrollTop = $("#divScrollTop");
 var halfbrowserHeight = $(document).height() / 2;
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 10,
+  effect: "fade",
+  grabCursor: true,
+  centeredSlides: true,
+  mousewheel: true,
+  keyboard: true,
+  navigation: {
+    prevEl: ".swiper-button-next",
+    nextEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
 });
 
 function initPage() {

@@ -310,6 +310,15 @@ main section.releted-content .releted-content__title__extra {
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
+  width: 150px;
+}
+main section.releted-content .releted-content__title__extra .page-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  bottom: auto;
 }
 main section.releted-content .releted-content__title__extra .btn-paging {
   width: 46px;
@@ -317,6 +326,17 @@ main section.releted-content .releted-content__title__extra .btn-paging {
   border: 1px solid #d7d7d7;
   border-radius: 23px;
   background-color: #fff;
+}
+main section.releted-content .releted-content__title__extra .btn-paging.swiper-button-prev {
+  right: 0;
+  left: auto;
+}
+main section.releted-content .releted-content__title__extra .btn-paging.swiper-button-next {
+  left: 0;
+  right: auto;
+}
+main section.releted-content .releted-content__title__extra .btn-paging::after {
+  content: none;
 }
 main section.releted-content .swiper-slide {
   /* Center slide text vertically */

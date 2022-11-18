@@ -161,8 +161,8 @@ header {
     }
     .circle--red {
       margin-bottom: 12px;
-      @include size(12px,12px);
-      background:$red;
+      @include size(12px, 12px);
+      background: $red;
       border-radius: 50%;
     }
   }
@@ -267,7 +267,7 @@ main {
             .extra-hight-warper__item {
               border: 1px solid $gray;
               padding: 15px 30px;
-              img{
+              img {
                 margin-left: 10px;
                 cursor: pointer;
               }
@@ -323,16 +323,37 @@ main {
       .releted-content__title {
         display: flex;
         justify-content: space-between;
+
         &__extra {
           display: flex;
           align-items: center;
           gap: 10px;
+          position: relative;
+          width: 150px;
+          .page-text {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            bottom: auto;
+          }
           .btn-paging {
             width: 46px;
             height: 46px;
             border: 1px solid #d7d7d7;
             border-radius: 23px;
             background-color: #fff;
+            &.swiper-button-prev {
+              right: 0;
+              left: auto;
+            }
+            &.swiper-button-next {
+              left: 0;
+              right: auto;
+            }
+            &::after {
+              content: none;
+            }
           }
         }
       }
@@ -469,7 +490,7 @@ main {
             border-left: unset;
             border-right: unset;
           }
-          input:focus{
+          input:focus {
             outline: none;
           }
           button {
