@@ -303,6 +303,28 @@ main section.releted-content {
   background-color: #f4f5f7;
   margin-top: 60px;
 }
+main section.releted-content .releted-content__title {
+  display: flex;
+  justify-content: space-between;
+}
+main section.releted-content .releted-content__title__extra {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main section.releted-content .releted-content__title__extra .btn-paging {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #d7d7d7;
+  border-radius: 23px;
+  background-color: #fff;
+}
+main section.releted-content .swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 main section.releted-content .product-list {
   margin-top: 60px;
   display: grid;

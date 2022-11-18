@@ -1,12 +1,16 @@
-const $divScrollTop = $("#divScrollTop");
-const halfbrowserHeight = $(document).height() / 2;
+var $divScrollTop = $("#divScrollTop");
+var halfbrowserHeight = $(document).height() / 2;
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+});
 
 function initPage() {
   $divScrollTop.hide();
 }
 
 function showScrollToTop() {
-  const heightScrollTop = $(window).scrollTop();
+  var heightScrollTop = $(window).scrollTop();
   if (heightScrollTop > halfbrowserHeight) {
     $divScrollTop.show();
   } else {
